@@ -22,6 +22,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "appdmg": "^0.6.6",
     "electron-context-menu": "^3.6.0",
     "menubar": "^9.2.3",
     "nucleus-analytics": "^4.0.3",

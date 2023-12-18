@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>ChatGPT</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body class="myarrow">
-    <div class="page darwin">
-    <webview id="webview" src="https://chat.openai.com/chat" autosize="on" >
-   </webview>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>ChatGPT</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body class="myarrow">
+  <div class="page darwin">
+    <webview id="webview" src="https://chat.openai.com/?model=gpt-4" autosize="on">
+    </webview>
   </div>
-    <script>
+  <script>
     const webview = document.getElementById('webview');
-    webview.addEventListener('dom-ready', function() {
+    webview.addEventListener('dom-ready', function () {
 
       // hide message below text input, sidebar, suggestions on new chat
       webview.insertCSS(`
